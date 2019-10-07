@@ -1,0 +1,60 @@
+{% extends 'register_base.html' %}
+
+
+{% block title %}
+用户注册
+{% endblock %}
+
+
+{% block label %}
+<span style="font-size: 24px; color: #2e59d9">用户注册</span>
+{% endblock %}
+
+
+{% block content %}
+<form class="user">
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="email" class="form-control form-control-user" name="useremail" placeholder="请输入用户邮箱">
+    </label>
+    <br>
+    <br>
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="password" class="form-control form-control-user" name="password" placeholder="请输入用户密码">
+    </label>
+    <br>
+    <br>
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="password" class="form-control form-control-user" name="password_to" placeholder="请确认密码">
+    </label>
+    <br>
+    <br>
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="text" class="form-control form-control-user" placeholder="请输入用户昵称">
+    </label>
+    <br>
+    <br>
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="text" class="form-control form-control-user" placeholder="手机号码（选填）">
+    </label>
+    <br>
+    <br>
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="text" class="form-control form-control-user" placeholder="联系地址（选填）">
+    </label>
+    <br>
+    <br>
+    <label for="" style="width: 46%; margin-left: 4%" class="btn-primary">
+        <input type="reset" class="form-control form-control-user" value="重置信息">
+    </label>
+    <label for="" style="width: 46%;" class="btn-warning">
+        <input type="submit" class="form-control form-control-user" value="注册用户">
+    </label>
+    <hr>
+    <div class="text-center">
+        <a class="small" href="forgot-password.html">忘记密码？</a>
+    </div>
+    <div class="text-center">
+        <a class="small" href="login.html">已有账户？请登录</a>
+    </div>
+</form>
+{% endblock %}

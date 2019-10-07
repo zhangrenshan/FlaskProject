@@ -11,9 +11,21 @@ def index():
     return render_template('index.html', **locals())
 
 
+@app.route('/register/')
+def register():
+    return render_template('register.html', **locals())
+
+
 @app.route('/login/')
 def login():
     return render_template('login.html', **locals())
+
+
+@app.route('/index/')
+def ex_index():
+    return render_template('ex_index.html', **locals())
+
+
 
 
 # 注意点： 在初期，执行哪个文件下的视图函数和路由，就运行哪个文件
