@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+
+{% block style %}
+    <style>
+        .th1{
+            width: 8%;
+        }
+    </style>
+{% endblock %}
+
+
+{% block title %}
+    假条申请
+{% endblock %}
+
+
+{% block label %}
+
+{% endblock %}
+
+
+{% block content %}
+    <p style="width: 100%; text-align: center; font-size: 28px; color: #e74a3b;">请假申请</p>
+    <br>
+    <br>
+    <form action="" method="post">
+        <table style="text-align: center">
+            <tr>
+                <th class="th1">申请姓名</th>
+                <th class="th1">请假类型</th>
+                <th class="th1">起始时间</th>
+                <th class="th1">终止时间</th>
+                <th class="th1">请假天数</th>
+                <th class="th1">请假事由</th>
+                <th class="th1">联系方式</th>
+                <th class="th1">申请状态</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for=""><input type="text" class="form-control form-control-user" placeholder="请输入姓名" name="request_name"></label>
+                </td>
+                <td>
+                    <label for="" class="form-control form-control-user btn-block" >
+                        <select class="btn-block btn-user" name="request_type">
+                            {% for type in type_list %}
+                                <option value="{{ type }}">{{ type }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for=""><input type="datetime-local" class="form-control form-control-user" name="request_start_time"></label>
+                </td>
+                <td>
+                    <label for=""><input type="datetime-local" class="form-control form-control-user" name="request_end_time"></label>
+                </td>
+                <td>
+                    <label for="" class="form-control form-control-user btn-block">
+                        <select class="btn-block btn-user" name="request_data">
+                            {% for data in data_list %}
+                                <option value="{{ data }}">{{ data }}</option>
+                            {% endfor %}
+                        </select>
+                    </label>
+                </td>
+                <td>
+                    <label for=""><textarea name="request_description" cols="30" rows="2" style="text-align: center; line-height: 40px"></textarea></label>
+                </td>
+                <td>
+                    <label for=""><input type="text" placeholder="联系方式" class="form-control form-control-user btn-block" name="request_phone"></label>
+                </td>
+                <td style="height: 40px">
+                    <input type="submit" value="申请" class="btn-block btn-primary">
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}
+
+
+{% block script %}
+
+{% endblock %}

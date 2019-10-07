@@ -18,37 +18,79 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="card shadow mb-12">
-            <table class="table">
-                <tr>
-                    <th rowspan="3" colspan="2" style="width: 20%">
-                        <img src="/static/img/photo.jpeg" alt="用户头像" style="width: 100%;">
-                    </th>
-                    <th>姓名：</th>
-                    <td>13</td>
-                    <th>性别：</th>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <th>年龄：</th>
-                    <td>13</td>
-                    <th>身份：</th>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <th>学科：</th>
-                    <td>13</td>
-                    <th>阶段：</th>
-                    <td>15</td>
-                </tr>
-                <tr>
-                    <th>邮箱：</th>
-                    <td>13</td>
-                    <th>电话：</th>
-                    <td>13</td>
-                    <th>地址：</th>
-                    <td>15</td>
-                </tr>
-            </table>
+            <form action="" method="post">
+                <table class="table">
+                    <tr>
+                        <th rowspan="3" colspan="2" style="width: 20%">
+                            <img src="/static/img/photo.jpeg" alt="用户头像" style="width: 100%;">
+                        </th>
+                        <th>姓名：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_name }}" name="u_name">
+                            </label>
+                        </td>
+                        <th>性别：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_gender }}" name="u_gender">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>年龄：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_age }}" name="u_age">
+                            </label>
+                        </td>
+                        <th>身份：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_identity }}" name="u_identity">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>学科：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_subject }}" name="u_subject">
+                            </label>
+                        </td>
+                        <th>阶段：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_phases }}" name="u_phases">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>邮箱：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_email }}" name="u_email" disabled="disabled">
+                            </label>
+                        </td>
+                        <th>电话：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_phone_number }}" name="u_phone_number">
+                            </label>
+                        </td>
+                        <th>地址：</th>
+                        <td>
+                            <label for="">
+                                <input type="text" value="{{ user.u_address }}" name="u_address">
+                            </label>
+                        </td>
+                    </tr>
+                    <label for="">
+                        <input type="submit" value="修改">
+                    </label>
+                </table>
+            </form>
+
         </div>
     </div>
 </div>
@@ -58,18 +100,18 @@
 <br>
 <form action="" method="post">
     <label for="">
-        <select name="year" id="select01">
-            <option value="1">年份</option>
+        <select name="year">
+            <option>年份</option>
             {% for year in year_list %}
-                <option value="">{{year}}</option>
+                <option value="{{ year }}">{{year}}</option>
             {% endfor %}
         </select>
     </label>
     <label for="">
-        <select name="month" id="select02">
-            <option value="1">月份</option>
+        <select name="month">
+            <option>月份</option>
             {% for month in month_list %}
-                <option value="">{{month}}</option>
+                <option value="{{ month }}">{{month}}</option>
             {% endfor %}
         </select>
     </label>

@@ -12,9 +12,9 @@
 
 
 {% block content %}
-<form class="user">
+<form class="user" method="post">
     <label for="" class="col-sm-12 mb-3 mb-sm-0">
-        <input type="email" class="form-control form-control-user" name="useremail" placeholder="请输入用户邮箱">
+        <input type="email" class="form-control form-control-user" name="email" placeholder="请输入用户邮箱">
     </label>
     <br>
     <br>
@@ -29,12 +29,13 @@
     <label for="" style="width: 46%;" class="btn-warning">
         <input type="submit" class="form-control form-control-user" value="登录用户">
     </label>
+    <span style="font-size: 24px; color: red; text-align: center" class="btn-primary btn-block">{{ result.data }}</span>
     <hr>
     <div class="text-center">
         <a class="small" href="forgot-password.html">忘记密码？</a>
     </div>
     <div class="text-center">
-        <a class="small" href="login.html">没有账户？请注册</a>
+        <a class="small" href="/register/">没有账户？请注册</a>
     </div>
 </form>
 {% endblock %}

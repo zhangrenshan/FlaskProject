@@ -23,3 +23,17 @@ class Curriculum(BaseModel):
     c_id = models.Column(models.String(32))
     c_name = models.Column(models.String(32))
     c_time = models.Column(models.Date)
+
+
+class User(BaseModel):
+    __tablename__ = 'user'
+    u_email = models.Column(models.String(32), unique=True)
+    u_password = models.Column(models.String(32))
+    u_name = models.Column(models.String(32))
+    u_phone_number = models.Column(models.String(11), nullable=True)
+    u_address = models.Column(models.String(1024), nullable=True)
+    u_gender = models.Column(models.String(32), nullable=True)
+    u_age = models.Column(models.Integer, nullable=True)
+    u_identity = models.Column(models.String(32), default='学生') # 身份
+    u_subject = models.Column(models.String(32), nullable=True)
+    u_phases = models.Column(models.String(32), nullable=True)

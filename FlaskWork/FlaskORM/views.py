@@ -98,23 +98,103 @@ def index():
     return render_template('index.html', **locals())
 
 
-@app.route('/register/')
+import hashlib
+def setPassword(password):
+    result = hashlib.md5(password.encode()).hexdigest()
+    return result
+
+
+from flask import request
+from flask import redirect
+from models import User
+@app.route('/register/', methods=['GET', 'POST'])
 def register():
+    result = {
+        'code': 200,
+        'data': ''
+    }
+    if request.method == 'POST':
+        email = request.form.get('email')
+        if email:
+            password = request.form.get('password')
+            password_to = request.form.get('password_to')
+            print('email>>>{}\npassword>>>{}\npassword_to>>>{}'.format(email, password, password_to))
+            if password == password_to:
+                print('第一次校验')
+                db_email = User.query.filter_by(u_email=email).first()
+                print('db_email>>>{}'.format(db_email))
+                if not db_email:
+                    print('第二次校验')
+                    user = User()
+                    user.u_email = email
+                    print('user.u_email>>>{}'.format(user.u_email))
+                    user.u_password = setPassword(password)
+                    print('user.u_password>>>{}'.format(user.u_password))
+                    user.u_name = request.form.get('username')
+                    print('user.u_name>>>{}'.format(user.u_name))
+                    user.u_phone_number = request.form.get('phonenumber')
+                    print('user.u_phone_number>>>{}'.format(user.u_phone_number))
+                    user.u_address = request.form.get('address')
+                    print('user.u_address>>>{}'.format(user.u_address))
+                    user.save()
+                    print(user.id)
+                    return redirect('/login/')
+                else:
+                    result['code'] = 404
+                    result['data'] = '邮箱已被注册'
+            else:
+                result['code'] = 404
+                result['data'] = '两次密码不一致'
+        else:
+            result['code'] = 404
+            result['data'] = '邮箱不能为空'
+
     return render_template('register.html', **locals())
 
 
-@app.route('/login/')
+from flask import session
+@app.route('/login/', methods=['GET', 'POST'])
 def login():
+    result = {
+        'code': 200,
+        'data': ''
+    }
+    if request.method == 'POST':
+        email = request.form.get('email')
+        password = setPassword(request.form.get('password'))
+        print('email>>>{}\npassword>>>{}'.format(email, password))
+        if email and password:
+            db_email = User.query.filter_by(u_email=email).first()
+            print('db_email>>>{}'.format(db_email))
+            if db_email:
+                db_password = db_email.u_password
+                print('db_password>>>{}'.format(db_password))
+                if password == db_password:
+                    response = redirect('/index/')
+                    response.set_cookie('email', db_email.u_email)
+                    response.set_cookie('id', str(db_email.id))
+                    session.permanent = True
+                    session['email'] = db_email.u_email
+                    session['id'] = str(db_email.id)
+                    return response
+                else:
+                    result['code'] = 404
+                    result['data'] = '密码错误'
+            else:
+                result['code'] = 404
+                result['data'] = '邮箱不存在'
+
+
     return render_template('login.html', **locals())
 
 
 @app.route('/index/')
 def ex_index():
-    # c = Curriculum()
-    # c.c_id = '0001'
-    # c.c_name = 'python基础'
-    # c.c_time = datetime.datetime.now()
-    # c.save()
+    c = Curriculum()
+    c.c_id = '0001'
+    c.c_name = 'python基础'
+    c.c_time = datetime.datetime.now()
+    c.save()
     curr_list = Curriculum.query.all()
     return render_template('ex_index.html', **locals())
 

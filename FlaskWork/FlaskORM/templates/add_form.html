@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    教学任务发布
+{% endblock %}
+
+
+{% block style %}
+
+{% endblock %}
+
+
+{% block label %}
+    教学任务发布
+{% endblock %}
+
+
+{% block content %}
+    <form action="" method="post">
+        {% for foo in task %}
+            {{ foo }}
+        {% endfor %}
+        <input type="submit" value="提交" class="btn btn-block btn-primary">
+    </form>
+{% endblock %}

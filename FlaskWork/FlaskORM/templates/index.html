@@ -1,39 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+    index页面
+{% endblock %}
+
+
+{% block style %}
+
+{% endblock %}
+
+
+{% block label %}
+
+{% endblock %}
+
+
+{% block content %}
     <pre>
-        你好，我是{{name}}
-        <hr>
-        <div>
-            <p>jinja2变量索引</p>
-            我是name的索引位第一位：{{name.1}}
-            <hr>
-            <p>jinja2变量方法</p>
-            我是name的方法大写后：{{name.upper()}}
-            <hr>
-            <p>jinja2变量方法传参</p>
-            我是name的方法以a分割后：{{name.split('a')}}
-            注意：参数需要加引号
-            <hr>
-            <p>jinja2循环</p>
-            {% for n in name %}
-                我是name循环后的：{{n}}
-            {% endfor %}
-            <hr>
-            <p>jinja2变量运算</p>
-            我是name加字符串后：{{name+'好帅'}}
-            <hr>
-            <p>jinja2判断</p>
-            {% if age %}
-                如果有name，打印：<p>{{name}}</p>
-            {% else %}
-                如果没有name，打印：<p>没有名称</p>
-            {% endif %}
-        </div>
+        <span style="font-size: 24px; color: #2e59d9">你好！{{ user.u_name }}</span>
+        <br>
+                <span style="font-size: 20px">欢迎登陆管理平台</span>
+                {% for foo in curr_list %}
+                    <span style="font-size: 30px; color: red">{{ foo.c_name }}</span>
+                {% endfor %}
+
+
     </pre>
-</body>
-</html>
+{% endblock %}

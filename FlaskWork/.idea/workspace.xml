@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dd2cf95-62ec-48b5-9341-00ec89445ddd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/FlaskORM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/dictionaries/Administrator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FlaskORM/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORM.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/ORM.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/.idea/dataSources/4463e4a7-25b6-4030-8c56-101b39307622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/.idea/dataSources/4463e4a7-25b6-4030-8c56-101b39307622.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/ORM.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/userinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+
+{% block style %}
+
+{% endblock %}
+
+
+{% block title %}
+
+{% endblock %}
+
+
+{% block label %}
+
+{% endblock %}
+
+
+{% block content %}
+    <form action="" method="post">
+        <table class="table">
+            <tr>
+                <a href="/ll/0/{{ page }}/" class="btn-primary btn" style="margin-right: 20px">申请中</a>
+                <a href="/ll/1/{{ page }}/" class="btn-primary btn" style="margin-right: 20px">已批准</a>
+                <a href="/ll/2/{{ page }}/" class="btn-primary btn" style="margin-right: 20px">已驳回</a>
+                <a href="/ll/3/{{ page }}/" class="btn-primary btn" style="margin-right: 20px">已销假</a>
+            </tr>
+            <tr>
+                <th>假条编号</th>
+                <th>申请姓名</th>
+                <th>请假类型</th>
+                <th>起始时间</th>
+                <th>终止时间</th>
+                <th>请假天数</th>
+                <th>请假事由</th>
+                <th>联系方式</th>
+                <th>申请状态</th>
+                <th>申请操作</th>
+            </tr>
+            {% for leave in leaves %}
+                <tr>
+                    <td>{{ leave.id }}</td>
+                    <td>{{ leave.request_name }}</td>
+                    <td>{{ leave.request_type }}</td>
+                    <td>{{ leave.request_start_time }}</td>
+                    <td>{{ leave.request_end_time }}</td>
+                    <td>{{ leave.request_data }}</td>
+                    <td>{{ leave.request_description }}</td>
+                    <td>{{ leave.request_phone }}</td>
+                    <td>
+                        {% if leave.request_status == '0' %}
+                            请&nbsp;&nbsp;&nbsp;&nbsp;假
+                        {% elif leave.request_status == '1' %}
+                            批&nbsp;&nbsp;&nbsp;&nbsp;准
+                        {% elif leave.request_status == '2' %}
+                            驳&nbsp;&nbsp;&nbsp;&nbsp;回
+                        {% else %}
+                            销&nbsp;&nbsp;&nbsp;&nbsp;假
+                        {% endif %}
+                    </td>
+                    <th><label for=""><input type="button" id="{{ leave.id }}" class="btn1" value="撤销"></label></th>
+                </tr>
+            {% endfor %}
+        </table>
+        <ul class="pagination" style="float: right">
+            {% if not pager.is_start %}
+                <li class="paginate_tutton page-item">
+                    <a class="page-link" href="/ll/{{ pager.previous_page }}/">上一页</a>
+                </li>
+            {% endif %}
+            {% for p in pager.page_range %}
+                {% if page == p %}
+                    <li class="paginate_button page-item disabled">
+                        <a href="/ll/{{ p }}"></a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+
+        </ul>
+    </form>
+
+{% endblock %}
+
+
+{% block script %}
+    <script>
+        {#alert('123')#}
+        {#$('.btn1').click(#}
+        {#    function () {#}
+        {#        alert('123')#}
+        {#    }#}
+        {#)#}
+        {#$('#"{{ leave.id }}"').click(#}
+        {#    function () {#}
+        {#        alert('456')#}
+        {#    }#}
+        {#)#}
+
+    </script>
+{% endblock %}
