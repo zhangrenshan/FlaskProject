@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dd2cf95-62ec-48b5-9341-00ec89445ddd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FlaskORM/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/.idea/dataSources/4463e4a7-25b6-4030-8c56-101b39307622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/.idea/dataSources/4463e4a7-25b6-4030-8c56-101b39307622.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/ORM.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/userinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/userinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="2dd2cf95-62ec-48b5-9341-00ec89445ddd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,7 +312,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1117" y="12" width="805" height="1028" extended-state="1" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31514326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

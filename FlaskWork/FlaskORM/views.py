@@ -98,6 +98,30 @@ def index():
     return render_template('index.html', **locals())
 
 
+import functools
+def loginValid(func):
+    @functools.wraps(func)
+    def inner(*args, **kwargs):
+        email = request.cookies.get('email')
+        id = request.cookies.get('id')
+        if id and email:
+            user = User.query.get(int(id))
+            if user.u_email == email:
+                return func(*args, **kwargs)
+            else:
+                return redirect('/login/')
+        return redirect('/login/')
+    return inner
+
+
+@app.route('/logout/')
+def logout():
+    response = redirect('/login/')
+    response.delete_cookie('id')
+    response.delete_cookie('email')
+    return response
+
+
 import hashlib
 def setPassword(password):
     result = hashlib.md5(password.encode()).hexdigest()
@@ -189,6 +213,7 @@ def login():
 
 
 @app.route('/index/')
+@loginValid
 def ex_index():
     c = Curriculum()
     c.c_id = '0001'
