@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dd2cf95-62ec-48b5-9341-00ec89445ddd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/FlaskORM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FlaskORM/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ORM.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/ORM.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ORM_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ORM_views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/FlaskWork$ORM_views_v1.coverage" NAME="ORM_views_v1 Coverage Results" MODIFIED="1570453521234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FlaskWork$models.coverage" NAME="models Coverage Results" MODIFIED="1570451217060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Flask_demo" />
     <SUITE FILE_PATH="coverage/FlaskWork$views_template.coverage" NAME="views_template Coverage Results" MODIFIED="1570449156024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FlaskWork$views_url.coverage" NAME="views_url Coverage Results" MODIFIED="1570446396949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -49,15 +61,34 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ORM_views.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="109" column="18" lean-forward="true" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+            <state relative-caret-position="216">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views_template.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="125" selection-end-line="125" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#121#2664#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views_url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -67,8 +98,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -89,13 +120,19 @@
         <option value="E:/Flask_demo/models.py" />
         <option value="D:/Desktop/gitFlask/FlaskProject_0701/flaskProject/ORM_views.py" />
         <option value="$PROJECT_DIR$/ORM_views.py" />
+        <option value="$PROJECT_DIR$/ORM_views_v1.py" />
+        <option value="$PROJECT_DIR$/FlaskORM/views.py" />
+        <option value="$PROJECT_DIR$/FlaskORM/manage.py" />
+        <option value="$PROJECT_DIR$/FlaskORM/init.py" />
+        <option value="$PROJECT_DIR$/FlaskORM/main.py" />
+        <option value="$PROJECT_DIR$/FlaskORM/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="790" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1117" />
     <option name="y" value="12" />
-    <option name="width" value="1132" />
+    <option name="width" value="805" />
     <option name="height" value="1028" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -114,6 +151,11 @@
             <path>
               <item name="FlaskWork" type="b2602c69:ProjectViewProjectNode" />
               <item name="FlaskWork" type="462c0819:PsiDirectoryNode" />
+              <item name="FlaskORM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlaskWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlaskWork" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -127,7 +169,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="E:/Flask_demo/flaskORM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FlaskORM" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -144,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ORM_views">
+  <component name="RunManager" selected="Python.ORM_views_v1">
     <configuration name="ORM_views" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FlaskWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,6 +201,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ORM_views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ORM_views_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FlaskWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ORM_views_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -235,6 +299,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ORM_views_v1" />
         <item itemvalue="Python.ORM_views" />
         <item itemvalue="Python.models" />
         <item itemvalue="Python.views_template" />
@@ -252,63 +317,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570443561701</updated>
-      <workItem from="1570443563001" duration="8739000" />
+      <workItem from="1570443563001" duration="10280000" />
+      <workItem from="1570454089523" duration="1090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8739000" />
+    <option name="totallyTimeSpent" value="11370000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1117" y="12" width="805" height="1028" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.084227465" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31514326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.328341" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33986175" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34598213" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35714287" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" weight="0.32886267" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.328341" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32886267" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views_url.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Desktop/gitFlask/FlaskProject_0701/flaskProject/views_url.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="761">
           <caret line="23" lean-forward="true" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -326,16 +378,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/view_template.py" />
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -413,28 +456,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#121#2664#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Flask_demo/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2052">
           <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3328a32c-d5d9-4350-a648-b0e8b59e0946/schema/main/table/curriculum">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -445,12 +470,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ORM_views.py">
+    <entry file="file://D:/Desktop/gitFlask/FlaskProject_0701/flaskProject/ORM_views_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="109" column="18" lean-forward="true" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+        <state>
+          <caret line="30" column="19" lean-forward="true" selection-start-line="23" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://3328a32c-d5d9-4350-a648-b0e8b59e0946/schema/main/table/curriculum">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskORM/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ORM_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskORM/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskORM/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlaskORM/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ORM_views_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="58" column="39" lean-forward="true" selection-start-line="37" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views_url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views_template.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#121#2664#0" />
           </folding>
         </state>
       </provider>

@@ -1,0 +1,40 @@
+{% extends 'register_base.html' %}
+
+
+{% block title %}
+    用户登录
+{% endblock %}
+
+
+{% block label %}
+    用户登录
+{% endblock %}
+
+
+{% block content %}
+<form class="user">
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="email" class="form-control form-control-user" name="useremail" placeholder="请输入用户邮箱">
+    </label>
+    <br>
+    <br>
+    <label for="" class="col-sm-12 mb-3 mb-sm-0">
+        <input type="password" class="form-control form-control-user" name="password" placeholder="请输入用户密码">
+    </label>
+    <br>
+    <br>
+    <label for="" style="width: 46%; margin-left: 4%" class="btn-primary">
+        <input type="reset" class="form-control form-control-user" value="重置信息">
+    </label>
+    <label for="" style="width: 46%;" class="btn-warning">
+        <input type="submit" class="form-control form-control-user" value="登录用户">
+    </label>
+    <hr>
+    <div class="text-center">
+        <a class="small" href="forgot-password.html">忘记密码？</a>
+    </div>
+    <div class="text-center">
+        <a class="small" href="login.html">没有账户？请注册</a>
+    </div>
+</form>
+{% endblock %}

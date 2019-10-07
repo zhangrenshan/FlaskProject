@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    index页面
+{% endblock %}
+
+
+{% block style %}
+
+{% endblock %}
+
+
+{% block label %}
+
+{% endblock %}
+
+
+{% block content %}
+    <pre>
+        <span style="font-size: 24px; color: #2e59d9">你好！用户名：</span>
+        <br>
+                <span style="font-size: 20px">欢迎登陆管理平台</span>
+        <p>你的课程有：</p>
+        {% for foo in curr_list %}
+            {{ foo.c_name }}
+        {% endfor %}
+
+    </pre>
+{% endblock %}
