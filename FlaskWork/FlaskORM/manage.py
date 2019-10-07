@@ -17,6 +17,11 @@ def hello():
     print('hello')
 
 
+@manage.command
+def migrate():
+    models.create_all()
+
+
 # 如果想不用再Terminal命令行输入命令，直接在项目里运行
 # 需要在Edit Config中更改Target为manage.py
 

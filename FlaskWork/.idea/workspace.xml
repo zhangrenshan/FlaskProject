@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2dd2cf95-62ec-48b5-9341-00ec89445ddd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FlaskORM/paginator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/.idea/dataSources/4463e4a7-25b6-4030-8c56-101b39307622.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/.idea/dataSources/4463e4a7-25b6-4030-8c56-101b39307622.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/ORM.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/ORM.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FlaskORM/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/leave_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/leave_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

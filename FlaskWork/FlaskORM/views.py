@@ -233,3 +233,58 @@ def userinfo():
     # calendar = Calendar(int(year), int(month))
     calendar = Calendar(2019, 9)
     return render_template('userinfo.html', **locals())
+
+
+from models import Leave
+@app.route('/rl/', methods=['GET', 'POST'])
+@loginValid
+def request_leave():
+    type_list = ['事假', '病假', '婚假', '年假', '产假', '缺勤', '调休', '加班', '出差']
+    data_list = [x for x in range(365)]
+    if request.method == 'POST':
+        user = request.cookies.get('id')
+        print('user>>>{}'.format(user))
+        request_name = request.form.get('request_name')
+        print('request_name>>>{}'.format(request_name))
+        request_type = request.form.get('request_type')
+        print('request_type>>>{}'.format(request_type))
+        request_start_time = request.form.get('request_start_time')
+        print('request_start_time>>>{}'.format(request_start_time))
+        request_end_time = request.form.get('request_end_time')
+        print('request_end_time>>>{}'.format(request_end_time))
+        request_data = request.form.get('request_data')
+        request_description = request.form.get('request_description')
+        print('request_description>>>{}'.format(request_description))
+        request_phone = request.form.get('request_phone')
+        print('request_phone>>>{}'.format(request_phone))
+        leave = Leave()
+        leave.request_id = user
+        print('leave.request_id>>>{}'.format(leave.request_id))
+        leave.request_name = request_name
+        print('leave.request_name>>>{}'.format(leave.request_name))
+        leave.request_type = request_type
+        print('leave.request_type>>>{}'.format(leave.request_type))
+        leave.request_start_time = request_start_time
+        print('leave.request_start_time>>>{}'.format(leave.request_start_time))
+        leave.request_end_time = request_end_time
+        print('leave.request_end_time>>>{}'.format(leave.request_end_time))
+        leave.request_data = request_data
+        print('leave.request_data>>>{}'.format(leave.request_data))
+        leave.request_description = request_description
+        print('leave.request_description>>>{}'.format(leave.request_description))
+        leave.request_phone = request_phone
+        print('request_phone>>>{}'.format(leave.request_phone))
+        leave.request_status = 0
+        leave.save()
+        print('保存成功')
+    return render_template('request_leave.html', **locals())
+
+
+from paginator import Pager
+@app.route("/leave_list/<int:page>/")
+@loginValid
+def leave_list(page):
+    leaves = Leave.query.all()
+    pager = Pager(leaves, 2)
+    page_data = pager.page_date(page)
+    return render_template("leave_list.html", **locals())

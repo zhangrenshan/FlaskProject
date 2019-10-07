@@ -37,3 +37,16 @@ class User(BaseModel):
     u_identity = models.Column(models.String(32), default='学生') # 身份
     u_subject = models.Column(models.String(32), nullable=True)
     u_phases = models.Column(models.String(32), nullable=True)
+
+
+class Leave(BaseModel):
+    __tablename__ = 'leave'
+    request_id = models.Column(models.Integer)              # 请假人id
+    request_name = models.Column(models.String(32))         # 请假人姓名
+    request_type = models.Column(models.String(32))         # 假期类型
+    request_start_time = models.Column(models.String(32))   # 起始时间
+    request_end_time = models.Column(models.String(32))     # 结束时间
+    request_data = models.Column(models.String(32))         # 请求天数
+    request_description = models.Column(models.TEXT)        # 请假事由
+    request_phone = models.Column(models.String(11))        # 联系方式
+    request_status = models.Column(models.String(32))
