@@ -17,13 +17,8 @@
 
 {% block content %}
     <pre>
-        <span style="font-size: 24px; color: #2e59d9">你好！{{ user.u_name }}</span>
+        <span style="font-size: 24px; color: #2e59d9">你好！{{ name }}</span>
         <br>
-                <span style="font-size: 20px">欢迎登陆管理平台</span>
-                {% for foo in curr_list %}
-                    <span style="font-size: 30px; color: red">{{ foo.c_name }}</span>
-                {% endfor %}
-
 
     </pre>
 {% endblock %}

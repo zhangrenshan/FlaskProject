@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2dd2cf95-62ec-48b5-9341-00ec89445ddd" name="Default Changelist" comment="" />
+    <list default="true" id="2dd2cf95-62ec-48b5-9341-00ec89445ddd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlaskORM/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FlaskORM/templates/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,6 +316,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1117" y="12" width="805" height="1028" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31514326" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
