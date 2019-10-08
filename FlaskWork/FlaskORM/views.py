@@ -215,24 +215,55 @@ def login():
 @app.route('/index/')
 @loginValid
 def ex_index():
-    c = Curriculum()
-    c.c_id = '0001'
-    c.c_name = 'python基础'
-    c.c_time = datetime.datetime.now()
-    c.save()
+    # c = Curriculum()
+    # c.c_id = '0001'
+    # c.c_name = 'python基础'
+    # c.c_time = datetime.datetime.now()
+    # c.save()
     curr_list = Curriculum.query.all()
     return render_template('ex_index.html', **locals())
 
 
 @app.route('/userinfo/', methods=['GET', 'POST'])
+@loginValid
 def userinfo():
+    user_id = request.cookies.get('id')
+    print('user_id>>>{}'.format(user_id))
+    user = User.query.get(user_id)
+    print('user>>>{}'.format(user))
+    if request.method == 'POST':
+        u_name = request.form.get('u_name')
+        u_phone_number = request.form.get('u_phone_number')
+        u_address = request.form.get('u_address')
+        u_gender = request.form.get('u_gender')
+        u_age = request.form.get('u_age')
+        u_identity = request.form.get('u_identity')
+        u_subject = request.form.get('u_subject')
+        u_phases = request.form.get('u_phases')
+        user.u_name = u_name
+        user.u_phone_number = u_phone_number
+        user.u_address = u_address
+        user.u_gender = u_gender
+        user.u_age = u_age
+        user.u_identity = u_identity
+        user.u_subject = u_subject
+        user.u_phases = u_phases
+        user.save()
+    return render_template('userinfo.html', **locals())
+
+
+@app.route('/ca/', methods=['GET', 'POST'])
+@loginValid
+def course_arrangement():
     year_list = [x for x in range(2020, 1948, -1)]
     month_list = [x for x in range(12, 0, -1)]
-    # year = request.form.get('year')
-    # month = request.form.get('month')
-    # calendar = Calendar(int(year), int(month))
-    calendar = Calendar(2019, 9)
-    return render_template('userinfo.html', **locals())
+    year = datetime.datetime.now().year
+    month = datetime.datetime.now().month
+    if request.method == 'POST':
+        year = request.form.get('year')
+        month = request.form.get('month')
+    calendar = Calendar(int(year), int(month))
+    return render_template('course_arrangement.html', **locals())
 
 
 from models import Leave
@@ -281,7 +312,7 @@ def request_leave():
 
 
 from paginator import Pager
-@app.route("/leave_list/<int:page>/")
+@app.route("/ll/<int:page>/")
 @loginValid
 def leave_list(page):
     leaves = Leave.query.all()

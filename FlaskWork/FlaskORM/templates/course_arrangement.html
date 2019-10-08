@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+课程安排
+{% endblock %}
+
+
+{% block style %}
+
+{% endblock %}
+
+
+{% block label %}
+    课程安排
+{% endblock %}
+
+
+{% block content %}
+<form action="" method="post">
+    <label for="">
+        <select name="year">
+            <option>年份</option>
+            {% for year in year_list %}
+                <option value="{{ year }}">{{year}}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label for="">
+        <select name="month">
+            <option>月份</option>
+            {% for month in month_list %}
+                <option value="{{ month }}">{{month}}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <label for="">
+        <input type="submit" value="查看">
+    </label>
+</form>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card shadow mb-12">
+            <table class="table">
+                <tr>
+                    <th>周日</th>
+                    <th>周一</th>
+                    <th>周二</th>
+                    <th>周三</th>
+                    <th>周四</th>
+                    <th>周五</th>
+                    <th>周六</th>
+                </tr>
+                {% for ca in calendar.return_month() %}
+                <tr>
+                    {% for c in ca %}
+                    <td>{{c}}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+<hr style="height: 3px">
+    <a href="/userinfo/"><span style="font-size: 26px">个人信息>>></span></a>
+{% endblock %}
+
+
+{% block script %}
+
+{% endblock %}

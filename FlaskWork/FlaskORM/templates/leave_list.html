@@ -43,23 +43,23 @@
     <ul class="pagination" style="float: right;">
         {% if not pager.is_start %}
         <li class="paginate_button page-item">
-            <a class="page-link" href="/leave_list/{{ pager.previous_page }}/">上一页</a>
+            <a class="page-link" href="/ll/{{ pager.previous_page }}/">上一页</a>
         </li>
         {% endif %}
         {% for p in pager.page_range %}
             {% if page == p %}
                 <li class="paginate_button page-item disabled">
-                    <a class="page-link btn btn-primary" href="/leave_list/{{ p }}/">{{ p }}</a>
+                    <a class="page-link btn btn-primary" href="/ll/{{ p }}/">{{ p }}</a>
                 </li>
             {% else %}
                 <li class="paginate_button page-item">
-                    <a class="page-link" href="/leave_list/{{ p }}/">{{ p }}</a>
+                    <a class="page-link" href="/ll/{{ p }}/">{{ p }}</a>
                 </li>
             {% endif %}
         {% endfor %}
         {% if not pager.is_end %}
             <li class="paginate_button page-item">
-                <a class="page-link" href="/leave_list/{{ pager.next_page}}/">下一页</a>
+                <a class="page-link" href="////{{ pager.next_page}}/">下一页</a>
             </li>
         {% endif %}
     </ul>
